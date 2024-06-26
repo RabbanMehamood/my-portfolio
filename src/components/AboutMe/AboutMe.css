@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Full viewport height */
+}
+
+.half {
+    flex: 1; /* Takes up equal space */   
+}
+
+.half:first-child {
+    background: radial-gradient(590px at 8.2% 13.8%, rgb(18, 35, 60) 0%, rgb(187, 187, 187) 90%);    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.half:last-child {
+    background-image: url("../../assets/DP.jpeg");
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    padding-bottom: 70px;
+
+}
+
+
+.welcome-heading {
+    color: #fdffcd;
+    position: relative;
+    font-size: 2rem;
+    margin: 20px;
+    opacity: 0;
+    animation: slide-in 4s forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
