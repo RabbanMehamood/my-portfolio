@@ -1,5 +1,5 @@
 import './AboutMe.css'
-import DP from '../../assets/DP.jpeg'
+
 
 
 function AboutMe() {
@@ -15,8 +15,7 @@ function AboutMe() {
 
          </div>
          <div className='half'>
-           <p>To become familiar of my education,skills,projects</p>
-           <button>Click Here</button>
+         
             
          </div>
         </div>
